@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 85px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}    
+
+
+    .nav-links {
+        display: flex;
+        justify-content:flex-end;
+        margin-left: -160px;
+        list-style: none;
+        text-decoration: none;
+        width: 75%; 
+
+    }
+    .nav-links a:hover {
+        background-color: rgba(102, 100, 100, 0.945);
+        color:white;
+
+    }
+    .nav-links a:active {
+        background-color: rgba(78, 68, 47, 0.945);
+
+    }
+
+
+    .coins,
+    .exchanges,
+    .nfts,
+    .wallets,
+    .blog,
+    .account
+    {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        padding: 10px 20px;
+        margin: 0 10px;
+        cursor: pointer;
+
+    }   
+
+
+/* Submit coin button */
+.navbtn{
+    border: 1px solid #D7AB19;
+    text-decoration: none;
+    border-radius: 4px;
+    background: #ce9908;
+    padding: 14px 28px;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 38px;
+     
+}
+  
+
+.navbtn:hover {
+    transition: all 0.2s ease-in-out;
+    background: rgba(124, 83, 6, 0.849);
+    color: #ffffff;
+    text-decoration: none;   
+} 
+
+
+
+Link:hover {
+    color: #c6d0de;
+    text-decoration: none;
+}
+
+
+.mobile-menu-icon{
+    display: none;
+    margin-left: -30px;
+
+}
+
+.columnad {
+    float: left;
+    padding: 10px 0 0 50px ;
+    height: 100px; /* Should be removed. Only for demonstration */
+  }
+
+  .columnadx {
+    float: right;
+    padding: 10px 50px 0 0 ;
+    height: 100px; /* Should be removed. Only for demonstration */
+  }  
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+
+
+/* @media queries for mobile only */
+
+@media screen and (max-width: 768px) {
+    .mobile-menu-icon{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 75%);
+    font-size: 1.8rem;
+    cursor: pointer;
+
+    }
+
+    /* mobile logo */
+    .logo{
+        display: flex;
+        position: absolute;
+        top: 15px;
+        left: 35px;
+
+    }
+
+    .nav-links {
+        display:none;
+    }
+
+    
+      
+    .nav-links-mobile{
+        position: absolute;
+        display: block;
+        list-style: none;
+        background-color: black;
+        left:0;
+        top: 75px;
+        transition: all 0.5s ease-out;
+        width: 100%;
+        height:400px
+       
+        
+    }
+/* 
+    .nav-links-mobile a:hover li {
+        background-color: rgba(102, 100, 100, 0.945);
+        margin-left: 130px;
+        max-width: 40%;
+        padding:5px;
+
+    } */
+
+    .coins,
+    .exchanges,
+    .nfts,
+    .wallets,
+    .blog,
+    .account
+            {
+        padding-bottom: 50px;
+        color:white;
+        text-align: center;
+        padding: 32px;
+        width: 100%;
+        transition: all 0.5s ease;
+    }
+
+
+.navbtn {
+    margin-left: 140px;
+    padding: 12px 14px;
+    margin-bottom: -120px;
+    
+}
+
+
+
+.mobile-menu-icon{
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    color:white;
+    background-color: black;
+    border: none;
+    outline: none;
+    top: 15px;
+    right: 25px;
+}
+
+.navbtn{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    width:50%;
+    font-size: 23px;
+    margin-left: 130px;
+    padding-top: 5px;
+    padding-bottom:7px;
+    padding-right: 3px;;
+    border: 2px solid rgb(128, 96, 10);
+    outline:none;
+    border-radius: 50px;
+    background-color: rgb(185, 142, 0);
+    
+}
+
+  }
+  /* @media queries mobile ends */
+
+

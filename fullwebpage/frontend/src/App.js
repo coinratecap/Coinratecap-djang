@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Navbar from './components/Navbar';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import coins from './components';
+import exchanges from './components/exchanges';
+import nfts from './components/nfts';
+import wallets from './components/wallets';
+import blogs from './components/blog';
+import submitcoin from './components/submitcoin';
+import justlisted from './components/justlisted';
+
+
+
+
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload now.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React now
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <Switch>
+        <Route path='/' exact component={coins} />
+        <Route path='/exchanges' component={exchanges} />
+        <Route path='/nfts' component={nfts} />
+        <Route path='/wallets' component={wallets} />
+        <Route path='/blogs' component={blogs} />
+        <Route path='/submitcoin' component={submitcoin} />
+        <Route path='/justlisted' component={justlisted} />
+        <Route path='/' component={Headers.js} />
+
+
+      </Switch>
+    </Router>
   );
 }
 
 export default App;
+
