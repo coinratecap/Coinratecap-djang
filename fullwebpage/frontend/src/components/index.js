@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from 'react';
 import MaterialTable from 'material-table';
 import Header from './Navbar/Header.js'
@@ -56,3 +57,23 @@ function Cointable() {
 
 
 export default Cointable;
+=======
+import React from 'react';
+
+const coins = () => {
+  return (
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '90vh'
+      }}
+    >
+      <h1>Coins</h1>
+    </div>
+  );
+};
+
+export default coins;
+>>>>>>> 70d60eee38ec77d5b18095a340338ed17d945c6a
